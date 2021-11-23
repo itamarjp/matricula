@@ -32,5 +32,9 @@ while(True):
         print(aluno)
      time.sleep(2)
  if opcao =="5":
+   file = open("dados.txt","a")
+   for aluno in Lista_Alunos:
+     file.write(aluno + "\n")
+   file.close()
    print("Good Bye")
    sys.exit(0)
